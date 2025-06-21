@@ -84,3 +84,37 @@ Dentro dela, crie um arquivo dimens.xml (botão direito → New → Android Reso
 - values-sw600dp-land/ → tablets em landscape específicos
 
 Dessa forma você consegue dar tamanhos e espaçamentos maiores só nos tablets, sem afetar o layout dos smartphones.
+
+
+
+*** Alterando tamanho do texto de MaterialToolbar
+
+1. Adicione os valores nas dimens
+
+Em res/values/dimens.xml (e nos qualifiers que precisar) adicione, por exemplo:
+	- <!-- dimens.xml padrão -->
+	- <dimen name="text_size_toolbar">20sp</dimen>
+
+Em res/values-sw600dp/dimens.xml:
+
+
+	- <dimen name="text_size_toolbar">32sp</dimen>
+
+Em res/values-sw600dp-land/dimens.xml:
+
+	- <dimen name="text_size_toolbar">40sp</dimen>
+	
+	
+2. Em res/values/themes.xml adicione:
+
+  <!-- TextAppearance específico para o Toolbar -->
+  <style name="TextAppearance.LayoutResponsivo.Toolbar"
+         parent="TextAppearance.MaterialComponents.Headline6">
+    <item name="android:textSize">@dimen/text_size_toolbar</item>
+  </style>	
+  
+
+3. No seu activity_main.xml, referencie:
+
+app:titleTextAppearance="@style/TextAppearance.LayoutResponsivo.Toolbar"
+

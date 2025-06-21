@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- espaçamentos horizontais/verticais -->
+    <dimen name="text_size_toolbar">20sp</dimen>
     <dimen name="margin_horizontal_large">16dp</dimen>
     <dimen name="margin_horizontal_small">8dp</dimen>
     <dimen name="margin_vertical_small">8dp</dimen>
