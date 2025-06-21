@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- espaçamentos horizontais/verticais -->
+    <dimen name="margin_horizontal_large">16dp</dimen>
+    <dimen name="margin_horizontal_small">8dp</dimen>
+    <dimen name="margin_vertical_small">8dp</dimen>
+
+    <!-- tamanhos de texto -->
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_input">16sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+</resources>

@@ -1,0 +1,86 @@
+
+*** Para criar o diretório values-sw600dp (ou qualquer outro qualifier) faça assim:
+
+
+1. No Project view, expanda app/src/main/res.
+
+2. Clique com o botão direito em res → New → Android Resource Directory.
+
+	- Não use “Sample Data Directory”.
+
+3. Na janela que abre:
+
+	- Não alterar "Directory Name", será preenchido automaticamente.
+	
+	- Resource type: escolha values.
+
+	- Em Available qualifiers, selecione Smallest Screen Width e clique em +
+
+	- No campo que aparece, digite 600
+
+	- O Directory name será preenchido automaticamente como values-sw600dp.
+
+4. Clique em OK.
+
+5. Alterar Visualização do projeto de "Android" para "Project"
+	- Expandir até achar a nova pasta values-sw600dp
+	- Criar o arquivo dimens.xml
+
+
+Pronto: você terá a pasta values-sw600dp/.
+
+Dentro dela, crie um arquivo dimens.xml (botão direito → New → Android Resource File, tipo values) e coloque seus ajustes de dimensão para tablets.
+
+
+
+
+*** Para criar o diretório values-sw600dp-land (ou qualquer outro qualifier) faça assim:
+
+
+1. No Project view, expanda app/src/main/res.
+
+2. Clique com o botão direito em res → New → Android Resource Directory.
+
+	- Não use “Sample Data Directory”.
+
+3. Na janela que abre:
+
+	- Não alterar "Directory Name", será preenchido automaticamente.
+
+	- Resource type: escolha values.
+
+	- Em Available qualifiers, selecione Smallest Screen Width e clique em +
+
+	- No campo que aparece, digite 600
+	
+	- Em Available qualifiers selecione Orientation e clique em +, altere para Landscape
+
+	- O Directory name será preenchido automaticamente como values-sw600dp-land.
+
+4. Clique em OK.
+
+5. Alterar Visualização do projeto de "Android" para "Project"
+	- Expandir até achar a nova pasta values-sw600dp
+	- Criar o arquivo dimens.xml
+	
+
+Pronto: você terá a pasta values-sw600dp-land/.
+
+Dentro dela, crie um arquivo dimens.xml (botão direito → New → Android Resource File, tipo values) e coloque seus ajustes de dimensão para tablets na orientação vertical.
+	
+	
+	
+	
+*** O qualifier sw600dp indica “smallest width ≥ 600 dp”, ou seja:
+
+- Aplica-se a tablets (e a quaisquer dispositivos cuja menor dimensão da tela seja ≥ 600 dp)
+- Não será usado em smartphones comuns (geralmente < 600 dp de largura)
+- Se o aparelho estiver em landscape e ≥ 600 dp, aí entra o values-sw600dp-land
+
+* Em resumo:
+
+- values/ → todos os dispositivos
+- values-sw600dp/ → tablets (portrait e landscape)
+- values-sw600dp-land/ → tablets em landscape específicos
+
+Dessa forma você consegue dar tamanhos e espaçamentos maiores só nos tablets, sem afetar o layout dos smartphones.
