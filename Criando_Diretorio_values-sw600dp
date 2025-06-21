@@ -91,7 +91,8 @@ Dessa forma você consegue dar tamanhos e espaçamentos maiores só nos tablets,
 
 1. Adicione os valores nas dimens
 
-Em res/values/dimens.xml (e nos qualifiers que precisar) adicione, por exemplo:
+Em res/values/dimens.xml (e nos qualifiers que precisar) adicione:
+
 	- <!-- dimens.xml padrão -->
 	- <dimen name="text_size_toolbar">20sp</dimen>
 

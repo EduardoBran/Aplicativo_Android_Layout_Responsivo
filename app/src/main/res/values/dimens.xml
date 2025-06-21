@@ -7,7 +7,15 @@
     <dimen name="margin_vertical_small">8dp</dimen>
 
     <!-- tamanhos de texto -->
-    <dimen name="text_size_title">18sp</dimen>
-    <dimen name="text_size_input">16sp</dimen>
-    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_toolbar_min">16sp</dimen>
+    <dimen name="text_size_toolbar_max">20sp</dimen>
+
+    <dimen name="text_size_title_min">14sp</dimen>
+    <dimen name="text_size_title_max">18sp</dimen>
+
+    <dimen name="text_size_input_min">14sp</dimen>
+    <dimen name="text_size_input_max">16sp</dimen>
+
+    <dimen name="text_size_button_min">12sp</dimen>
+    <dimen name="text_size_button_max">14sp</dimen>
 </resources>
