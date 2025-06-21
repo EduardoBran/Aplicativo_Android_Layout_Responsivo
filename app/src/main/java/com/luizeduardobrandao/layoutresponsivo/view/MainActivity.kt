@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.luizeduardobrandao.layoutresponsivo.R
 import com.luizeduardobrandao.layoutresponsivo.databinding.ActivityMainBinding
+import com.luizeduardobrandao.layoutresponsivo.helper.BannerAds
 import com.luizeduardobrandao.layoutresponsivo.viewmodel.LayoutResponsivoViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -34,9 +35,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // inicializa SDK
+        BannerAds.initialize(this)
+
         setListenners()
         setObservers()
 
+        // carrega o banner no container da view binding
+        BannerAds.loadBanner(this, binding.frameLayoutBanner)
     }
 
     // Sobrescrever o mét0do que infla o menu para aparecer o ícone
