@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">LayoutResponsivo</string>
+
+    <string name="text_menu_conf">Configurações</string>
+    <string name="text_menu_title">Layout Responsivo</string>
+
+    <string name="text_title">Digite seu nome:</string>
+
+    <string name="hint_name">Seu nome</string>
+
+    <string name="btn_send">Enviar</string>
+    <string name="btn_clean">Limpar</string>
+
+    <string name="desc_banner">Banner</string>
+
+
+
 </resources>

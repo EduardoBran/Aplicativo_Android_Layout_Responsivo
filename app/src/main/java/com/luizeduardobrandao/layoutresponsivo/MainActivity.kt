@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         // 1) Infla o layout e seta a ViewBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // 2) Configura a Toolbar (binding.toolbarMain) como ActionBar da Activity
+        setSupportActionBar(binding.toolbar)
         
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
