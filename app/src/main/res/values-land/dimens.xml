@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margens menores no modo horizontal -->
+    <dimen name="text_size_toolbar">20sp</dimen>
+    <dimen name="margin_horizontal_large">24dp</dimen>
+    <dimen name="margin_horizontal_small">18dp</dimen>
+    <dimen name="margin_vertical_small">6dp</dimen>
+
+    <!-- tamanhos de texto -->
+    <dimen name="text_size_toolbar_min">16sp</dimen>
+    <dimen name="text_size_toolbar_max">20sp</dimen>
+
+    <dimen name="text_size_title_min">14sp</dimen>
+    <dimen name="text_size_title_max">18sp</dimen>
+
+    <dimen name="text_size_input_min">14sp</dimen>
+    <dimen name="text_size_input_max">16sp</dimen>
+
+    <dimen name="text_size_button_min">12sp</dimen>
+    <dimen name="text_size_button_max">14sp</dimen>
+</resources>

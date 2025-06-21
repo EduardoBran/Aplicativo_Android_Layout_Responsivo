@@ -1,3 +1,17 @@
+*** Para criar diretório values-land (orientação vertical para celulares)
+
+- Clique com o direito em res → New → Android Resource Directory
+
+- Resource type: values
+
+- Qualifier: clique em +, escolha Orientation → landscape
+
+- O Android Studio vai sugerir values-land como Directory name. Confirme.
+
+- Alterar Visualização do projeto de "Android" para "Project"
+	- Expandir até achar a nova pasta values-land
+	- Criar o arquivo dimens.xml
+
 
 *** Para criar o diretório values-sw600dp (ou qualquer outro qualifier) faça assim:
 
@@ -30,7 +44,6 @@
 Pronto: você terá a pasta values-sw600dp/.
 
 Dentro dela, crie um arquivo dimens.xml (botão direito → New → Android Resource File, tipo values) e coloque seus ajustes de dimensão para tablets.
-
 
 
 
@@ -118,4 +131,30 @@ Em res/values-sw600dp-land/dimens.xml:
 3. No seu activity_main.xml, referencie:
 
 app:titleTextAppearance="@style/TextAppearance.LayoutResponsivo.Toolbar"
+
+
+
+*** Layouts por “Buckets” de Tela (Smartphone × Tablet Portrait × Tablet Landscape)
+
+Objetivo: Fornecer variações mínimas do mesmo activity_main.xml para que em tablets (portrait e landscape) seus botões — e todo o layout — não fiquem esticados, mantendo proporções e usabilidade.
+
+1. Criar a pasta layout-sw600dp (Tablet Portrait)
+No Project view, expanda app/src/main/res → clique com o direito em res → New → Android Resource Directory.
+
+Em Resource type selecione layout.
+
+Em Available qualifiers clique no +, escolha Smallest Screen Width, digite 600dp → OK.
+
+Verifique que o Directory name ficou layout-sw600dp. Clique em OK.
+
+5.2 Copiar o layout-base para layout-sw600dp
+Ainda em res/layout, localize activity_main.xml.
+
+Copie-e-cole (ou arraste com Ctrl+C / Ctrl+V) para dentro de res/layout-sw600dp/.
+
+Agora você tem:
+
+res/layout/activity_main.xml (smartphones)
+
+res/layout-sw600dp/activity_main.xml (tablets portrait)
 
