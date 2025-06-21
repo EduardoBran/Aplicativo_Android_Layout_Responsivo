@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- espaçamentos horizontais/verticais -->
-    <dimen name="text_size_toolbar">20sp</dimen>
+    <!-- espaçamentos horizontais/verticais gerais-->
     <dimen name="margin_horizontal_large">16dp</dimen>
     <dimen name="margin_horizontal_small">8dp</dimen>
     <dimen name="margin_vertical_small">8dp</dimen>
+
+    <!-- espaçamento horizontal para botões -->
+    <dimen name="margin_horizontal_btn">16dp</dimen>
+
+    <!-- padding interno do input -->
+    <dimen name="input_padding_horizontal">18dp</dimen>
+    <dimen name="input_padding_vertical">18dp</dimen>
+
+    <!-- padding vertical dos botões -->
+    <dimen name="button_padding_vertical">8dp</dimen>
 
     <!-- tamanhos de texto -->
     <dimen name="text_size_toolbar_min">16sp</dimen>
