@@ -1,3 +1,13 @@
+*** Criar o primeiro dimens.xml
+
+1. Criar o arquivo de dimensões
+
+No Android Studio, clique com o direito em res/values → New → Values resource file.
+
+Nomeie como dimens.xml.
+
+
+
 *** Para criar diretório values-land (orientação vertical para celulares)
 
 - Clique com o direito em res → New → Android Resource Directory
@@ -138,23 +148,13 @@ app:titleTextAppearance="@style/TextAppearance.LayoutResponsivo.Toolbar"
 
 Objetivo: Fornecer variações mínimas do mesmo activity_main.xml para que em tablets (portrait e landscape) seus botões — e todo o layout — não fiquem esticados, mantendo proporções e usabilidade.
 
-1. Criar a pasta layout-sw600dp (Tablet Portrait)
-No Project view, expanda app/src/main/res → clique com o direito em res → New → Android Resource Directory.
+1. Crie em res/values um arquivo fractions.xml:
 
-Em Resource type selecione layout.
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- define o percentual padrão para smartphones -->
+  <fraction name="button_width_fraction">0.48</fraction>
+</resources>
 
-Em Available qualifiers clique no +, escolha Smallest Screen Width, digite 600dp → OK.
 
-Verifique que o Directory name ficou layout-sw600dp. Clique em OK.
-
-5.2 Copiar o layout-base para layout-sw600dp
-Ainda em res/layout, localize activity_main.xml.
-
-Copie-e-cole (ou arraste com Ctrl+C / Ctrl+V) para dentro de res/layout-sw600dp/.
-
-Agora você tem:
-
-res/layout/activity_main.xml (smartphones)
-
-res/layout-sw600dp/activity_main.xml (tablets portrait)
 
